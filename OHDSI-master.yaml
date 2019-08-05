@@ -244,7 +244,7 @@ Resources:
     DependsOn: VPCStack
     Properties:
       Description: CloudFormation Sample Aurora Cluster Parameter Group
-      Family: aurora-postgresql9.6
+      Family: aurora-postgresql10
       Parameters:
         rds.force_ssl: 1
   RDSDBParameterGroup:
@@ -252,7 +252,7 @@ Resources:
     DependsOn: VPCStack
     Properties:
       Description: CloudFormation Sample Aurora Parameter Group
-      Family: aurora-postgresql9.6
+      Family: aurora-postgresql10
       Parameters:
         log_rotation_age: 60
   RDSDBSubnets:
